@@ -24,4 +24,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # db 스킴이 만들어지면(마이그레이트) 바로 자동으로 추가된다, 어드민 로그인 가능
     path('', views.home), #메인페이지
+    path('myform/', views.form)
 ]
