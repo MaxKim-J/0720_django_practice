@@ -21,6 +21,5 @@ def home(request):
 
 # 폼 뷰함수
 def form(request):
-    print(request)
-    rqst = request.GET
+    rqst = request.GET #템플릿에서 get 형태로 들어온 값의 리퀘스트를 받는다
     return render(request, "bookmark/form.html", {'ctx' : rqst} )
